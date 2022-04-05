@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webv
-  namespace: csapp
+  namespace: testtemplate
   labels:
     app.kubernetes.io/name: webv
 spec:
@@ -60,7 +60,7 @@ spec:
           - --log-format
           - Json
           - --server
-          - http://csapp:8080
+          - http://testtemplate:8080
           - --files
           - benchmark.json
           - --zone
@@ -73,7 +73,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: webv
-  namespace: csapp
+  namespace: testtemplate
   labels:
     app: webv
 spec:

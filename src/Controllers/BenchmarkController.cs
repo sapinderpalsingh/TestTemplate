@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CseLabs.Middleware;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CSApp.Controllers
+namespace TestTemplate.Controllers
 {
     /// <summary>
     /// Handle benchmark requests

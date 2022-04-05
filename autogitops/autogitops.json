@@ -1,7 +1,7 @@
 {
-  "name": "csapp",
-  "namespace": "csapp",
-  "imageName": "ghcr.io/retaildevcrews/csapp",
+  "name": "testtemplate",
+  "namespace": "testtemplate",
+  "imageName": "ghcr.io/retaildevcrews/testtemplate",
   "imageTag": "beta",
   "targetDir": "deploy/apps",
   "targets": [ "demo" ],

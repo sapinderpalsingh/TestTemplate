@@ -5,10 +5,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using CSApp.Model;
+using TestTemplate.Model;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace CSApp
+namespace TestTemplate
 {
     /// <summary>
     /// Cosmos Health Check

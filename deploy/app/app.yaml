@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: csapp
-  namespace: csapp
+  name: testtemplate
+  namespace: testtemplate
   labels:
-    app.kubernetes.io/name: csapp
+    app.kubernetes.io/name: testtemplate
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: csapp
+      app: testtemplate
   template:
     metadata:
       labels:
-        app: csapp
+        app: testtemplate
     spec:
       containers:
         - name: app
-          image: k3d-registry.localhost:5500/csapp:local
+          image: k3d-registry.localhost:5500/testtemplate:local
           imagePullPolicy: Always
 
           ports:
@@ -53,8 +53,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: csapp
-  namespace: csapp
+  name: testtemplate
+  namespace: testtemplate
 spec:
   type: NodePort
   ports:
@@ -64,4 +64,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: csapp
+    app: testtemplate

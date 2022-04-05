@@ -81,7 +81,7 @@ data:
           "steppedLine": false,
           "targets": [
             {
-              "expr": "sum(increase(CSAppDuration_bucket[$interval])) by (le)",
+              "expr": "sum(increase(TestTemplateDuration_bucket[$interval])) by (le)",
               "format": "heatmap",
               "interval": "",
               "intervalFactor": 1,

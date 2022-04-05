@@ -52,8 +52,8 @@ spec:
           - name: grafana-dashboard-provider
             mountPath: /etc/grafana/provisioning/dashboards/dashboardProvider.yaml
             subPath: dashboardProvider.yaml
-          - name: dashboards-csapp
-            mountPath: /var/lib/grafana/dashboards/csapp
+          - name: dashboards-testtemplate
+            mountPath: /var/lib/grafana/dashboards/testtemplate
           - name: dashboards-dotnet
             mountPath: /var/lib/grafana/dashboards/dotnet
       volumes:
@@ -70,9 +70,9 @@ spec:
         - name: grafana-dashboard-provider
           configMap:
             name: grafana-dashboard-provider
-        - name: dashboards-csapp
+        - name: dashboards-testtemplate
           configMap:
-            name: grafana-dashboards-csapp
+            name: grafana-dashboards-testtemplate
         - name: dashboards-dotnet
           configMap:
             name: grafana-dashboards-dotnet

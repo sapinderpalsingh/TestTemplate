@@ -5,7 +5,7 @@ using System;
 using System.Globalization;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace CSApp.Model
+namespace TestTemplate.Model
 {
     /// <summary>
     /// Health Check that supports dotnet IHeathCheck

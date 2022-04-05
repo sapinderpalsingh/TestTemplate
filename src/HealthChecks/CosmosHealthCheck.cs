@@ -7,20 +7,20 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using CSApp.Model;
+using TestTemplate.Model;
 using CseLabs.Middleware;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
 
-namespace CSApp
+namespace TestTemplate
 {
     /// <summary>
     /// Cosmos Health Check
     /// </summary>
     public partial class CosmosHealthCheck : IHealthCheck
     {
-        public static readonly string ServiceId = "CSApp";
+        public static readonly string ServiceId = "TestTemplate";
         public static readonly string Description = "Test App Health Check";
 
         private static JsonSerializerOptions jsonOptions;

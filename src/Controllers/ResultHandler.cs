@@ -10,7 +10,7 @@ using CseLabs.Middleware.Validation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
 
-namespace CSApp.Controllers
+namespace TestTemplate.Controllers
 {
     /// <summary>
     /// Handles query requests from the controllers

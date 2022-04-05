@@ -8,8 +8,8 @@
 
 # build and push the local image
 cd "$REPO_BASE" || exit
-docker build . -t k3d-registry.localhost:5500/csapp:local
-docker push k3d-registry.localhost:5500/csapp:local
+docker build . -t k3d-registry.localhost:5500/testtemplate:local
+docker push k3d-registry.localhost:5500/testtemplate:local
 
 # build local webv
 cd webv || exit

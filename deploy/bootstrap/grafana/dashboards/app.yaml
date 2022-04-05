@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: grafana-dashboards-csapp
+  name: grafana-dashboards-testtemplate
   namespace: monitoring
   labels:
     app: grafana
 data:
-  csapp.json: |-
+  testtemplate.json: |-
     {
       "annotations": {
         "list": [
@@ -112,7 +112,7 @@ data:
           "targets": [
             {
               "exemplar": true,
-              "expr": "sum(rate(CSAppDuration_count[1m])) by (mode)",
+              "expr": "sum(rate(TestTemplateDuration_count[1m])) by (mode)",
               "interval": "",
               "legendFormat": "{{category}}",
               "refId": "A"
@@ -195,7 +195,7 @@ data:
           "targets": [
             {
               "exemplar": true,
-              "expr": "sum(rate(CSAppDuration_count[1m]))",
+              "expr": "sum(rate(TestTemplateDuration_count[1m]))",
               "instant": false,
               "interval": "",
               "legendFormat": "",
@@ -322,7 +322,7 @@ data:
           "targets": [
             {
               "exemplar": true,
-              "expr": "sum(increase(CSAppDuration_bucket[1m])) by (le)",
+              "expr": "sum(increase(TestTemplateDuration_bucket[1m])) by (le)",
               "format": "heatmap",
               "instant": false,
               "interval": "5m",
@@ -434,7 +434,7 @@ data:
           "targets": [
             {
               "exemplar": true,
-              "expr": "sum(rate(CSAppDuration_count{code != \"OK\"}[1m])) by (mode)",
+              "expr": "sum(rate(TestTemplateDuration_count{code != \"OK\"}[1m])) by (mode)",
               "interval": "",
               "legendFormat": "{{category}}",
               "refId": "A"

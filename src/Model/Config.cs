@@ -3,7 +3,7 @@
 
 using Microsoft.Extensions.Logging;
 
-namespace CSApp
+namespace TestTemplate
 {
     public enum AppType
     {

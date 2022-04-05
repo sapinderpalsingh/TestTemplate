@@ -12,7 +12,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace CSApp
+namespace TestTemplate
 {
     /// <summary>
     /// Main application class
@@ -107,7 +107,7 @@ namespace CSApp
         // Log startup messages
         private static void LogStartup(CseLog logger)
         {
-            logger.LogInformation($"CSApp Started", VersionExtension.Version);
+            logger.LogInformation($"TestTemplate Started", VersionExtension.Version);
         }
 
         // Build the web host
@@ -132,7 +132,7 @@ namespace CSApp
                         logger.AddFilter("Microsoft", Config.LogLevel)
                         .AddFilter("System", Config.LogLevel)
                         .AddFilter("Default", Config.LogLevel)
-                        .AddFilter("CSApp", Config.LogLevel);
+                        .AddFilter("TestTemplate", Config.LogLevel);
                     }
                 });
 
